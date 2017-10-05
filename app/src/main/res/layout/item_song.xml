@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:id="@+id/ib_startPause"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/b_check"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_check"
+        android:layout_below="@+id/tv_duration"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tv_duration"
+        android:layout_toEndOf="@+id/tv_duration" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tv_duration"
+        android:layout_toEndOf="@+id/tv_song"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/tv_song"
+        android:textSize="24sp"
+        android:text="Kek"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/tv_duration"
+        android:layout_toRightOf="@+id/ib_startPause"
+        android:layout_toEndOf="@+id/ib_startPause" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_song"
+        android:layout_toRightOf="@+id/ib_startPause"
+        android:id="@+id/seekBar"
+        android:layout_alignRight="@+id/tv_song"
+        android:layout_alignEnd="@+id/tv_song" />
+</RelativeLayout>
